@@ -1,0 +1,72 @@
+body, html{
+  height: 100%;
+}
+
+body{
+
+  background-image: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+h1, p{
+  color: #000099;
+  text-align: center;
+}
+
+h1{
+  font-family: 'Playball';
+  font-size: 45px;
+}
+
+p{
+  font-family: 'Cabin Condensed';
+}
+
+.footerPage1{
+  display: flex;
+  justify-content: space-around;
+  height: 30%;
+  width: auto;
+  margin: 100px auto;
+}
+
+@media (min-width: 700px) {
+
+  .footerPage1 {
+    margin: 300px auto 30px auto;
+  }
+
+  h1{
+    font-size: 80px;
+  }
+
+  p{
+    font-size: 40px;
+  }
+
+  a{
+    font-size: 40px;
+  }
+
+
+ }
+
+
+.linkToNextPage{
+  justify-content: flex-end;
+  margin: 70px auto;
+  height: 50%;
+
+}
+
+a{
+position: relatives;
+font-family: 'Playball';
+font-size: 30px;
+color: white;
+text-decoration: none;
+
+}

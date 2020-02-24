@@ -1,0 +1,176 @@
+body, html{
+  height: 100%;
+}
+
+body{
+  background-image: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.quote1{
+  display: flex;
+  align-self:  center;
+  order: 1;
+  width: 300px;
+  height: 200px;
+  font-family: 'Cabin Condensed';
+  font-size: 20px;
+  color: #000099;
+}
+
+.author1{
+  display: flex;
+  align-self: flex-end;
+  flex-wrap: wrap;
+  order: 1;
+  height: 100px;
+  width: 300px;
+  font-family: 'Playball';
+  font-size: 20px;
+  margin: 5px auto;
+  color: black;
+}
+
+.quote2{
+  display: flex;
+  align-self: center;
+  order: 2;
+  width: 300px;
+  height: 200px;
+  font-family: 'Cabin Condensed';
+  font-size: 20px;
+  color: #000099;
+}
+
+.author2{
+  display: flex;
+  align-self: flex-end;
+  order: 2;
+  height: 100px;
+  width: 300px;
+  font-family: 'Playball';
+  font-size: 20px;
+  margin: 5px;
+  color: black;
+}
+
+
+.buttonContainer{
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
+  order: 3;
+
+}
+
+.moreQuotesButton{
+	box-shadow: 5px 11px 0px -4px #b8c8f0;
+	background-color:#f06ea9;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:1px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2c5fde;
+}
+.moreQuotesButton:hover {
+	background-color:#246dc7;
+}
+.moreQuotesButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.beforeYouGoBtn{
+  	box-shadow: 5px 11px 0px -4px #b8c8f0;
+  	background-color:#f06ea9;
+  	border-radius:10px;
+  	border:1px solid #4e6096;
+  	display:inline-block;
+  	cursor:pointer;
+  	color:#ffffff;
+  	font-family:Arial;
+  	font-size:12px;
+  	padding:7px 25px;
+  	text-decoration:none;
+  	text-shadow:0px 1px 0px #2c5fde;
+  }
+  .beforeYouGoBtn:hover {
+  	background-color:#246dc7;
+  }
+  .beforeYouGoBtn:active {
+  	position:relative;
+  	top:1px;
+  }
+
+
+
+@media (min-width: 700px) {
+
+  h1{
+    font-size: 60px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+
+#modal {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+  display: none;
+}
+
+#modal-textbox {
+	background-color: white;
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  color: #000099;
+
+}
+
+#modal-footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.close {
+  justify-content: center;
+  margin: 0 auto;
+	padding: 14px 18px;
+	background-color: #677996;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
+}
