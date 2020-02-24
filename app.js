@@ -36,10 +36,10 @@ $.ajax(settings).done(function (response) {
       // console.log(quote2);
       // console.log(author2);
 
-    $('.quote1').append(quote1);
-    $('.author1').append('\"' + author1 +'\"');
-    $('.quote2').append(quote2);
-    $('.author2').append('\"'+ author2 +'\"');
+    $('.quote1').append($('<p>').html(quote1));
+    $('.author1').append($('<p>').html('\"' + author1 +'\"'));
+    $('.quote2').append($('<p>').html(quote2));
+    $('.author2').append($('<p>').html('\"' + author2 +'\"'));
   }
 moreQuotes();
 

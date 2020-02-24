@@ -25,6 +25,14 @@ p{
   font-family: 'Cabin Condensed';
 }
 
+a{
+font-family: 'Playball';
+font-size: 30px;
+color: white;
+text-decoration: none;
+}
+
+
 .footerPage1{
   display: flex;
   justify-content: space-around;
@@ -36,19 +44,19 @@ p{
 @media (min-width: 700px) {
 
   .footerPage1 {
-    margin: 300px auto 30px auto;
+    margin: 250px auto 30px auto;
   }
 
   h1{
-    font-size: 80px;
+    font-size: 70px;
   }
 
   p{
-    font-size: 40px;
+    font-size: 30px;
   }
 
   a{
-    font-size: 40px;
+    font-size: 80px;
   }
 
 
@@ -59,14 +67,5 @@ p{
   justify-content: flex-end;
   margin: 70px auto;
   height: 50%;
-
-}
-
-a{
-position: relatives;
-font-family: 'Playball';
-font-size: 30px;
-color: white;
-text-decoration: none;
 
 }
