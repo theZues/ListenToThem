@@ -12,14 +12,14 @@
 
   ## Built With
 
-  •	https://www.freecodecamp.org/forum/t/free-api-inspirational-quotes-json-with-code-examples/311373 - Freecodecamp’s Quote API
-  •	https://rapidapi.com/raygorodskij/api/GoogleBooks?endpoint=apiendpoint_272ce1d0-f967-11e7-8ae7-5d4cb90ae0c8getAccessToken - Went through the RapidAPI website and used the GoogleBooks API
+  •	Freecodecamp’s Quote API-https://www.freecodecamp.org/forum/t/free-api-inspirational-quotes-json-with-code-examples/311373 -
+  •	GoogleBooksAPI through the RapidAPI website -https://rapidapi.com/raygorodskij/api/GoogleBooks?endpoint=apiendpoint_272ce1d0-f967-11e7-8ae7-5d4cb90ae0c8getAccessToken
 
   ## Problems/Things to work on
 
   I had the most problems with the API’s and how to grab the data.  Object notation really helped though and of course, trial and error.  I need more time with Flexbox for sure.
 
   ## Acknowledgments
-  	•	Coding Shiksha’s YouTube video on Google Books Search app really helped with implementing the api after searching for hours.
-  	https://www.youtube.com/watch?v=bJ5K7IERMRE
-  	•	GA’s markdown’s
+
+  •	Coding Shiksha’s YouTube video on Google Books Search app really helped with implementing the api after searching for hours.https://www.youtube.com/watch?v=bJ5K7IERMRE
+  •	GA’s markdown’s
