@@ -12,7 +12,8 @@
 
   ## Built With
 
-  •	Freecodecamp’s Quote API-https://www.freecodecamp.org/forum/t/free-api-inspirational-quotes-json-with-code-examples/311373 -
+  •	Freecodecamp’s Quote API-https://www.freecodecamp.org/forum/t/free-api-inspirational-quotes-json-with-code-examples/311373
+  
   •	GoogleBooksAPI through the RapidAPI website -https://rapidapi.com/raygorodskij/api/GoogleBooks?endpoint=apiendpoint_272ce1d0-f967-11e7-8ae7-5d4cb90ae0c8getAccessToken
 
   ## Problems/Things to work on
@@ -22,4 +23,5 @@
   ## Acknowledgments
 
   •	Coding Shiksha’s YouTube video on Google Books Search app really helped with implementing the api after searching for hours.https://www.youtube.com/watch?v=bJ5K7IERMRE
+
   •	GA’s markdown’s
