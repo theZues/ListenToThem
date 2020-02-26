@@ -25,11 +25,21 @@ p{
   font-family: 'Cabin Condensed';
 }
 
-a{
-font-family: 'Playball';
+.seeTheQuotesBtn{
+font-family: 'Yesteryear';
 font-size: 30px;
 color: white;
 text-decoration: none;
+}
+
+.descartesQuote{
+  margin: 150px auto 30px auto;
+}
+
+.descartesQuote > p{
+  font-style: italic;
+  font-family: 'Italianno';
+  font-size: 50px;
 }
 
 
@@ -49,23 +59,37 @@ text-decoration: none;
 
   h1{
     font-size: 70px;
+    /* color | offset-x | offset-y | blur-radius */
+    text-shadow: #ff99cc 2px 2px 10px; 
   }
 
   p{
     font-size: 30px;
   }
 
-  a{
+  .seeTheQuotesBtn{
     font-size: 80px;
   }
 
-
  }
 
-
-.linkToNextPage{
+.animation{
   justify-content: flex-end;
   margin: 70px auto;
   height: 50%;
+  animation-name: bounce-4;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
 
 }
+
+@keyframes bounce-4 {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-50px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+/* Giving credit to css-tricks.com for helping me with the translate and distort portion. */

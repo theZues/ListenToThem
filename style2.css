@@ -7,9 +7,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
 }
-
 
 .container{
   display: flex;
@@ -70,6 +68,7 @@ body{
 .buttonContainer{
   display: flex;
   justify-content: space-around;
+  flex-wrap: nowrap;
   height: 30px;
   order: 3;
 
@@ -112,14 +111,63 @@ body{
   	text-decoration:none;
   	text-shadow:0px 1px 0px #2c5fde;
   }
-  .beforeYouGoBtn:hover {
+.beforeYouGoBtn:hover {
   	background-color:#246dc7;
   }
-  .beforeYouGoBtn:active {
+.beforeYouGoBtn:active {
   	position:relative;
   	top:1px;
   }
 
+/* Beginning of Book Search div */
+
+.bookResultsContainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  order: 3;
+  height: 250px;
+  margin: 30px auto;
+  overflow: scroll;
+}
+
+.bookImgResults{
+  display: flex;
+  height: 5px;
+}
+
+#bookInfoBtn{
+  box-shadow: 5px 11px 0px -4px #b8c8f0;
+  background-color:#f06ea9;
+  border-radius:10px;
+  border:1px solid #4e6096;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:10px;
+  padding:3px 10px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2c5fde;
+}
+#bookInfoBtn:hover {
+  background-color:#246dc7;
+}
+
+
+.bookResultsContainer > h1{
+  font-family: 'Yesteryear';
+  font-size: 25px;
+  color: #000099;
+  width: 250px;
+  height: 30px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+form{
+  margin-top: 20px;
+}
 
 
 
@@ -131,26 +179,27 @@ body{
 	height: 100%;
 	width: 100%;
 	z-index: 1;
-	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
 	overflow: auto;
-	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
   display: none;
 }
 
 #modal-textbox {
-	background-color: white;
+  text-align: center;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJb_bPg51cK_kgAYzrpJhJvHk_6UFbWoqS5k_G83GMbu9i_AQV');
+  background-repeat: no-repeat;
+  background-size: cover;
 	height: 350px;
 	width: 550px;
 	border-radius: 2px;
 	margin: 150px auto;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
   color: #000099;
-
+  font-family: 'Yesteryear';
+  font-size: 35px;
 }
 
 #modal-footer{
-  display: flex;
-  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .close {
@@ -166,8 +215,9 @@ body{
 	cursor: pointer;
 }
 
-@media (min-width: 700px) {
+/*=======Web Page display======== */
 
+@media (min-width: 700px) {
 
   .quote1{
     display: flex;
@@ -186,7 +236,7 @@ body{
     align-self: center;
     order: 1;
     height: 100px;
-    width: 300px;
+    width: 400px;
     font-family: 'Playball';
     font-size: 30px;
     margin: 5px auto;
@@ -203,14 +253,14 @@ body{
     font-family: 'Cabin Condensed';
     font-size: 30px;
     color: #000099;
-    margin: 10px auto;
+    margin: 20px auto;
     }
 
   .author2{
     align-self: center;
     order: 1;
     height: 100px;
-    width: 300px;
+    width: 400px;
     font-family: 'Playball';
     font-size: 30px;
     margin: 5px auto;
@@ -221,11 +271,55 @@ body{
   .buttonContainer{
     display: flex;
     justify-content: space-around;
+    order: 2;
     height: 30px;
     order: 3;
-    margin: 60px 0;
-
+    margin: 80px 0;
   }
 
+/* Saving for later version */
+/* #title{
+  font-size: 15px;
+}
 
+#author{
+  font-size: 15px;
+} */
+
+  .bookResultsContainer{
+    display: flex;
+    justify-content: space-between;
+    order: 3;
+    height: 300px;
+    width: 600px;
+    margin: 30px auto;
+  }
+  /* Saving for later version */
+  /* .titleResults{
+    display: flex;
+    height: 15px;
+  }
+
+  .authorResults{
+    height: 15px;
+  } */
+
+  .bookImgResults{
+    height: 15px;
+    margin: 5px;
+  }
+  /* Saving for later version */
+  /* .webAddressResults{
+    height: 15px;
+  } */
+
+  .bookResultsContainer > h1{
+    font-family: 'Yesteryear';
+    font-size: 35px;
+    color: #000099;
+  }
+
+  form{
+    margin-top: 40px;
+  }
 }

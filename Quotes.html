@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Italianno|Yesteryear&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed|Playball&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" charset="utf-8" defer></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" defer=""></script>
   <script src="app.js" charset="utf-8" defer></script>
@@ -21,37 +23,50 @@
       <div class="author2">
       </div>
     </div>
-
     <div class="buttonContainer">
       <button type="button" class="moreQuotesButton">Show me more quotes</button>
-
       <button class="beforeYouGoBtn" id="openModal">Before you go...</button>
     </div>
-  </div>
 
-  <div id="modal">
-    <div id="modal-textbox">
-        <h1>Thank You!</h1>
-        <p>I know it's a simple website, but it means a lot to me that you came by.</p>
-      <div id="modal-footer">
-	      <button class="close" href="#">Close</button>
+    <!-- ===========Google API book finder ============================ -->
+
+    <div class="bookResultsContainer">
+      <h1>Search Books</h1>
+
+      <form>
+      	<input type="text" placeholder="Title or Author"/>
+      	<input id="bookInfoBtn" type="submit" value="Get book Info" />
+      </form>
+
+      <div class="bookResults">
+      <!-- Saving for later version */
+
+       <div id="titleResults">
+        <h1>Title</h1>
+    	  <h2 id="title"></h2>
+      </div>
+      <div id="authorResults">
+        <h1>Author</h1>
+    	  <h2 id="author"></h2>
+      </div> -->
+      <div id="bookImgResults">
+    	  <p id="bookImg"></p>
       </div>
     </div>
   </div>
 
 
-  <!--=============My attempt at doing a search for books using google books api==========
- <div id="searchBooks">
-    <form id="bookForm">
-      <div class="input-field">
-        <input type="search" id="books">
-      </div>
-        <button class="redBtn">Search some books</button>
-    </form>
+
   </div>
-
- -->
-
+    <div id="modal">
+      <div id="modal-textbox">
+          <h1>Thank You!</h1>
+          <p>Feel free to stop by anytime.  Have a good one.</p>
+        <div id="modal-footer">
+  	      <button class="close" href="#">Close</button>
+        </div>
+      </div>
+    </div>
 
 
 
