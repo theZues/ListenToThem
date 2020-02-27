@@ -273,7 +273,7 @@ form{
 
   .buttonContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     order: 2;
     height: 30px;
