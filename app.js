@@ -92,14 +92,21 @@ $('form').on('submit', (event) => {
 //=========looping through results from GoogleAPI=========================
 $.ajax(settings).done(function (response) {
 			for (let i = 0; i < response.items.length; i++) {
+      //========= first attempt at wrapping an img tag in an a tag ==========
 			// $('#title').append($('<p>').html(response.items[i].volumeInfo.title));
  		  // $('#author').append($('<p>').html(response.items[i].volumeInfo.authors));
+      ////////original////////////
+      // let url = response.items[i].volumeInfo.imageLinks.smallThumbnail;
+      // $('#bookImg').append($('<img>').attr('src', url)).wrap('<a href=' + response.items[i].volumeInfo.infoLink + '></a>').css('margin','5px');
+      ///This worked!!======================================
       let url = response.items[i].volumeInfo.imageLinks.smallThumbnail;
-      $('#bookImg').append($('<img>').attr('src', url));
-      $('#bookImg').wrap('<a href=' + response.items[i].volumeInfo.infoLink + '></a>');
+      let img = $('<a href=' + response.items[i].volumeInfo.infoLink + '><img src='+url+'/></a>');
+  
+      $('#bookImg').append(img);
       //======= Try for a read more button in later version
 	 }
 $(event.currentTarget).trigger('reset');
+// event.stopPropagation();
 
 
 });
