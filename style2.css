@@ -11,7 +11,7 @@ body{
 
 .container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   height: 100%;
@@ -23,7 +23,7 @@ body{
   align-self:  center;
   order: 1;
   width: 300px;
-  height: 200px;
+  height: 170px;
   font-family: 'Cabin Condensed';
   font-size: 20px;
   color: #000099;
@@ -47,7 +47,7 @@ body{
   align-self: center;
   order: 2;
   width: 300px;
-  height: 200px;
+  height: 170px;
   font-family: 'Cabin Condensed';
   font-size: 20px;
   color: #000099;
@@ -69,8 +69,9 @@ body{
 .buttonContainer{
   display: flex;
   justify-content: space-between;
-  flex-wrap: rap;
+  margin: 0 5px;
   height: 30px;
+  width: 300px;
   order: 3;
 
 }
@@ -127,7 +128,7 @@ body{
   justify-content: center;
   flex-wrap: wrap;
   order: 4;
-  height: 250px;
+  height: 200px;
   width: 300px;
   margin: 30px auto;
   overflow: scroll;
