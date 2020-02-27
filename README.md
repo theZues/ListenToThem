@@ -25,3 +25,7 @@
   •	Coding Shiksha’s YouTube video on Google Books Search app really helped with implementing the api after searching for hours.https://www.youtube.com/watch?v=bJ5K7IERMRE
 
   •	GA’s markdown’s
+  
+  •	www.css-tricks.com - for helping me with the css animation portion.  Translate and distortion in particular.
+  
+  
