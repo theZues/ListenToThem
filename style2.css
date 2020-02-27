@@ -15,6 +15,7 @@ body{
   justify-content: flex-start;
   flex-wrap: wrap;
   height: 100%;
+
 }
 
 .quote1{
@@ -67,8 +68,8 @@ body{
 
 .buttonContainer{
   display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-wrap: rap;
   height: 30px;
   order: 3;
 
@@ -125,8 +126,9 @@ body{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  order: 3;
+  order: 4;
   height: 250px;
+  width: 300px;
   margin: 30px auto;
   overflow: scroll;
 }
@@ -271,6 +273,7 @@ form{
   .buttonContainer{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     order: 2;
     height: 30px;
     order: 3;
@@ -288,8 +291,8 @@ form{
 
   .bookResultsContainer{
     display: flex;
-    justify-content: space-between;
-    order: 3;
+    justify-content: center;
+    order: 4;
     height: 300px;
     width: 600px;
     margin: 30px auto;
