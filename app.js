@@ -46,7 +46,7 @@ $.ajax(settings).done(function (response) {
     $('.author2').append($('<p>').html('\"' + author2 +'\"'));
   }
 moreQuotes();
-
+    $('.moreQuotesButton').on('click', () => {
 //=========need to find another way than just refreshing whole page========
       window.location.reload();
   })
