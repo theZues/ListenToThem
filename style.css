@@ -53,7 +53,7 @@ text-decoration: none;
 
 .animation{
   justify-content: flex-end;
-  margin: 70px auto;
+  margin: 20px auto;
   height: 50%;
   animation-name: bounce-4;
   animation-duration: 2s;
@@ -72,7 +72,7 @@ text-decoration: none;
 @media (min-width: 700px) {
 
   .footerPage1 {
-    margin: 250px auto 30px auto;
+    margin: 200px auto 30px auto;
   }
 
   h1{
