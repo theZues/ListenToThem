@@ -7,11 +7,7 @@
 
   ## Approach Taken
 
-<<<<<<< HEAD
   This app was built with HTML, CSS, JavaScript and jQuery.  I also used AJAX to call two different API's.  I wanted to start off my first ever project with a simplistic approach.  I wanted basic html and css so I could spend more time on the api’s, javascript and query.  I’m sure I will be updating this to look even better, but I did achieve my goal.  Here’s the link. (The GitHub web address has issues so I’m using this for now.)  https://mystifying-panini-5afc14.netlify.com
-=======
-  I wanted to start off my first ever project with a simplistic approach.  I wanted basic html and css so I could spend more time on the api’s, javascript and query.  I’m sure I will be updating this to look even better, but I did achieve my goal.  Here’s the link. (The GitHub web address has issues so I’m using this for now.)  https://listentothem.netlify.app
->>>>>>> 80812b7a442fa32e323c3945341d27aa3f8eea24
 
 
   ## Built With
