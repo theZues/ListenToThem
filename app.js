@@ -84,11 +84,10 @@ $('form').on('submit', (event) => {
     	"method": "GET",
     	"headers": {
     		"x-rapidapi-host": "google-books.p.rapidapi.com",
-    		"x-rapidapi-key": "034bd792d0msh7699241f330da8dp16baf9jsn6b7d90e3100d"
+    		"x-rapidapi-key": "caf3f85292mshdfc3fc4f2f67c0ep164e7cjsne8dc8b14bd20"
     	}
 }
 
-//=========started on title's and author's but will save for later version========
 //=========looping through results from GoogleAPI=========================
 $.ajax(settings).done(function (response) {
 			for (let i = 0; i < response.items.length; i++) {
