@@ -3,7 +3,7 @@ body, html{
 }
 
 body{
-  background-image: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  background-image: url(images/mountains.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -121,7 +121,7 @@ body{
   	top:1px;
   }
 
-/* Beginning of Book Search div */
+/* =========Beginning of Book Search div================ */
 
 .bookResultsContainer{
   display: flex;
@@ -218,7 +218,7 @@ form{
 	cursor: pointer;
 }
 
-/*=======Web Page display======== */
+/*===================Web Page display===================== */
 
 @media (min-width: 700px) {
     .container{
@@ -289,14 +289,7 @@ form{
     margin: 50px auto;
   }
 
-/* Saving for later version */
-/* #title{
-  font-size: 15px;
-}
 
-#author{
-  font-size: 15px;
-} */
 
   .bookResultsContainer{
     display: flex;
@@ -306,24 +299,13 @@ form{
     width: 400px;
     margin: 30px auto;
   }
-  /* Saving for later version */
-  /* .titleResults{
-    display: flex;
-    height: 15px;
-  }
-
-  .authorResults{
-    height: 15px;
-  } */
+  
 
   .bookImgResults{
     height: 15px;
     margin: 5px;
   }
-  /* Saving for later version */
-  /* .webAddressResults{
-    height: 15px;
-  } */
+  
 
   .bookResultsContainer > h1{
     font-family: 'Yesteryear';
@@ -335,3 +317,22 @@ form{
     margin-top: 40px;
   }
 }
+
+/* Notes for updates
+  #title{
+    font-size: 15px;
+  }
+  #author{
+    font-size: 15px;
+  } 
+  .titleResults{
+    display: flex;
+    height: 15px;
+  }
+  .authorResults{
+    height: 15px;
+  } 
+  .webAddressResults{
+    height: 15px;
+  } 
+  */
