@@ -80,16 +80,21 @@ $('form').on('submit', (event) => {
     var settings = {
     	"async": true,
     	"crossDomain": true,
-    	"url": "https://google-books.p.rapidapi.com/volumes?q=" + userInput,
-    	"method": "GET",
-    	"headers": {
-    		"x-rapidapi-host": "google-books.p.rapidapi.com",
-    		"x-rapidapi-key": "caf3f85292mshdfc3fc4f2f67c0ep164e7cjsne8dc8b14bd20"
-    	}
+    	"url": "https://www.googleapis.com/books/v1/volumes?q=" + userInput,
+    	"method": "GET"
+    	// "headers": {
+    	// 	"x-rapidapi-host": "google-books.p.rapidapi.com",
+    	// 	"x-rapidapi-key": "caf3f85292mshdfc3fc4f2f67c0ep164e7cjsne8dc8b14bd20"
+    	//}
 }
-
+/*this is what i had before i added the key
+"url": "https://google-books.p.rapidapi.com/volumes?q=" + userInput,
+?q=inauthor:keyes&key=AIzaSyDTZixDRWuL9DLCI9_JpjtIpgKN41p1ZC8
+*/
 //=========looping through results from GoogleAPI=========================
 $.ajax(settings).done(function (response) {
+      console.log(response);
+      
 			for (let i = 0; i < response.items.length; i++) {
       //========= first attempt at wrapping an img tag in an a tag ==========
 			// $('#title').append($('<p>').html(response.items[i].volumeInfo.title));
