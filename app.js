@@ -48,7 +48,25 @@ $.ajax(settings).done(function (response) {
     window.location.reload();
   })
 
+$closeBtn.on('click', closeModal);
+
+
 });
+//===========Modal section=====================================
+const $beforeYouGoBtn = $('#openModal');
+const $modal = $('#modal');
+const $closeBtn = $('.close');
+
+const openModal = () => {
+  $modal.css('display', 'block');
+}
+
+const closeModal = () => {
+  $modal.css('display', 'none');
+}
+
+$beforeYouGoBtn.on('click', openModal);
+
 
 // ============Google API syntax===========================
 
@@ -89,6 +107,8 @@ $('form').on('submit', (event) => {
 
     $(event.currentTarget).trigger('reset');
     // event.stopPropagation();
+
+    
   });// end of googleAPI response
 
   //refreshing the div for the next call
@@ -97,20 +117,6 @@ $('form').on('submit', (event) => {
   // $('#title').empty();
   // $('#author').empty();
   // $('#webAddress').empty();
-//===========Modal section=====================================
-const $beforeYouGoBtn = $('#openModal');
-const $modal = $('#modal');
-const $closeBtn = $('.close');
-
-const openModal = () => {
-  $modal.css('display', 'block');
-}
-
-const closeModal = () => {
-  $modal.css('display', 'none');
-}
-
-$beforeYouGoBtn.on('click', openModal);
-$closeBtn.on('click', closeModal);
+  
 
 });
